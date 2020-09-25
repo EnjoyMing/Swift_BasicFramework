@@ -1,2 +1,3 @@
 # Swift_BasicFramework
-Simple setup of SWIFT infrastructure framework（swift基础框架的简单搭建）
+SWIFT基础架构框架的简单设置（swift基础框架的简单搭建）
+方便新项目能够快速推进和一些工具类的存储
