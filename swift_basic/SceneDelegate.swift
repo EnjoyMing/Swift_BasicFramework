@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+@available(iOS 13.0, *)
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
@@ -22,8 +22,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         self.window = UIWindow(windowScene: windowScene)
         self.window?.backgroundColor = .white
         //设置window的rootViewController
-        self.window?.rootViewController = UIViewController()
         self.window?.makeKeyAndVisible()
+        SNInitObject.share.showGuideViewOrLaunchView()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

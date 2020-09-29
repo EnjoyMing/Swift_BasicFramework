@@ -20,14 +20,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         } else {
             self.window = UIWindow(frame: UIScreen.main.bounds)
             self.window?.backgroundColor = .white
-            self.window?.rootViewController = UIViewController()
             self.window?.makeKeyAndVisible()
+            SNInitObject.share.showGuideViewOrLaunchView()
         }
+        printLog("来了，老弟 URL = \(hostUrl)")
         return true
     }
 }
 
 // MARK: UISceneSession Lifecycle
+@available(iOS 13.0, *)
 extension AppDelegate {
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
         // Called when a new scene session is being created.

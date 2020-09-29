@@ -7,6 +7,10 @@ target 'swift_basic' do
 
   # Pods for swift_basic
 
+  pod 'SnapKit'#布局
+  pod 'Kingfisher'#加载图片
+  pod 'IQKeyboardManagerSwift'#键盘
+  
   target 'swift_basicTests' do
     inherit! :search_paths
     # Pods for testing
