@@ -20,9 +20,10 @@ let hostUrl = "测试环境"
 let hostUrl = "线上环境"
 #endif
 
+//MARK: ========存储Key==========
 public enum SaveKey {
-    public static let isLogin = "isLogin"
-    public static let FirstOpenApp = "FirstOpenApp"
+    public static let isLogin = "isLogin"//免密登录
+    public static let FirstOpenApp = "FirstOpenApp"//第一次启动app
 }
 
 

@@ -25,6 +25,9 @@
 		88657DF8251DD18900B0B96D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88657DF6251DD18900B0B96D /* LaunchScreen.storyboard */; };
 		88657E03251DD18900B0B96D /* swift_basicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88657E02251DD18900B0B96D /* swift_basicTests.swift */; };
 		88657E0E251DD18900B0B96D /* swift_basicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88657E0D251DD18900B0B96D /* swift_basicUITests.swift */; };
+		88A9488C25242405008A01A4 /* SNDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A9488B25242405008A01A4 /* SNDomain.swift */; };
+		88A9488E25242422008A01A4 /* SNCommonApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A9488D25242422008A01A4 /* SNCommonApi.swift */; };
+		88A9489025242510008A01A4 /* SNCommonVModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A9488F25242510008A01A4 /* SNCommonVModel.swift */; };
 		88CF27AC2521DCEF002FDAD8 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CF27AB2521DCEF002FDAD8 /* Constant.swift */; };
 		88CF27B02521E66A002FDAD8 /* String+E.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CF27AF2521E66A002FDAD8 /* String+E.swift */; };
 		88CF27B22521E69A002FDAD8 /* Buttion+E.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CF27B12521E69A002FDAD8 /* Buttion+E.swift */; };
@@ -89,6 +92,9 @@
 		88657E09251DD18900B0B96D /* swift_basicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swift_basicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		88657E0D251DD18900B0B96D /* swift_basicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_basicUITests.swift; sourceTree = "<group>"; };
 		88657E0F251DD18900B0B96D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88A9488B25242405008A01A4 /* SNDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNDomain.swift; sourceTree = "<group>"; };
+		88A9488D25242422008A01A4 /* SNCommonApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNCommonApi.swift; sourceTree = "<group>"; };
+		88A9488F25242510008A01A4 /* SNCommonVModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNCommonVModel.swift; sourceTree = "<group>"; };
 		88CF27AB2521DCEF002FDAD8 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		88CF27AF2521E66A002FDAD8 /* String+E.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+E.swift"; sourceTree = "<group>"; };
 		88CF27B12521E69A002FDAD8 /* Buttion+E.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Buttion+E.swift"; sourceTree = "<group>"; };
@@ -358,9 +364,20 @@
 			path = SupportFiles;
 			sourceTree = "<group>";
 		};
+		88A9488A25241F91008A01A4 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				88A9488B25242405008A01A4 /* SNDomain.swift */,
+				88A9488D25242422008A01A4 /* SNCommonApi.swift */,
+				88A9488F25242510008A01A4 /* SNCommonVModel.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		88CF27AD2521E61C002FDAD8 /* Public */ = {
 			isa = PBXGroup;
 			children = (
+				88A9488A25241F91008A01A4 /* Network */,
 				88DE038D2522F99F00DDA782 /* Object */,
 				88646B222522DCE2001D015F /* BaseVC */,
 				88CF27AE2521E62A002FDAD8 /* Extension */,
@@ -657,10 +674,12 @@
 				88CF27B02521E66A002FDAD8 /* String+E.swift in Sources */,
 				88646B242522DD22001D015F /* SNBaseVC.swift in Sources */,
 				88CF27B22521E69A002FDAD8 /* Buttion+E.swift in Sources */,
+				88A9489025242510008A01A4 /* SNCommonVModel.swift in Sources */,
 				88DE03A125232E7400DDA782 /* SNGifImageOperation.swift in Sources */,
 				88CF27B82521E6D5002FDAD8 /* View+E.swift in Sources */,
 				88646B382522DFDD001D015F /* SNMiddlePageVC.swift in Sources */,
 				88CF27B62521E6BC002FDAD8 /* ImageView+E.swift in Sources */,
+				88A9488C25242405008A01A4 /* SNDomain.swift in Sources */,
 				88646B262522DD42001D015F /* SNTabBarVC.swift in Sources */,
 				88646B432522E4A1001D015F /* SNHomeView.swift in Sources */,
 				88646B472522E4F5001D015F /* SNLoginVC.swift in Sources */,
@@ -669,6 +688,7 @@
 				88646B3C2522E00F001D015F /* SNFourthPageVC.swift in Sources */,
 				88CF27B42521E6AD002FDAD8 /* Image+E.swift in Sources */,
 				88DE039225230A1300DDA782 /* SNGuideView.swift in Sources */,
+				88A9488E25242422008A01A4 /* SNCommonApi.swift in Sources */,
 				88646B282522DD66001D015F /* SNNavigationVC.swift in Sources */,
 				88CF27BA2521E6F0002FDAD8 /* TextField+E.swift in Sources */,
 				88CF27BC2521E6FF002FDAD8 /* TextView+E.swift in Sources */,

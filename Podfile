@@ -10,6 +10,8 @@ target 'swift_basic' do
   pod 'SnapKit'#布局
   pod 'Kingfisher'#加载图片
   pod 'IQKeyboardManagerSwift'#键盘
+  pod 'Alamofire'
+  pod 'Moya'
   
   target 'swift_basicTests' do
     inherit! :search_paths
